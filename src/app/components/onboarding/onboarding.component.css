@@ -1,0 +1,21 @@
+#container {
+    background-color: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-x: hidden;
+    min-height: 100%;
+}
+
+header {
+    background: black;
+    height: 56px;
+    z-index: 1002;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

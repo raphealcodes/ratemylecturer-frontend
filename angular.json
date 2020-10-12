@@ -24,9 +24,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/font-awesome/css/font-awesome.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/jquery/dist/jquery.min.js"]
           },
           "configurations": {
             "production": {
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ratemylecturer-frontend"
+    }
+  },
+  "defaultProject": "ratemylecturer-frontend",
+  "cli": {
+    "analytics": "2bc6208f-3ca2-40b1-a371-1e1cac6ba075"
+  }
 }
