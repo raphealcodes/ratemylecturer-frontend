@@ -1,0 +1,9 @@
+#container {
+    background-color: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-x: hidden;
+    min-height: 100%;
+}
+

@@ -1,0 +1,743 @@
+#container {
+    background-color: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-x: hidden;
+    min-height: 100%;
+}
+
+.sticky-wrapper, .sticky-placeholder {
+    position: fixed;
+    z-index: 950;
+    top: 56px;
+    right: 0;
+    padding: 5px 0;
+    background: white;
+    left: 70px;
+    width: calc(100% - 70px);
+    height: 100px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sticky-wrapper .ad, .sticky-placeholder .ad {
+    min-width: 728px;
+    position: relative;
+}
+
+.close-ad-button {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    color: grey;
+    border: none;
+    outline: none;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+#body.sticky-shown {
+    margin-top: 156px;
+} 
+}
+#body {
+    height: 100%;
+    position: relative;
+    margin-left: 70px;
+    padding-right: 70px;
+    margin-top: 56px;
+    left: 0;
+    background-color: #FFF;
+    -webkit-transition: left 0.3s ease;
+    -moz-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    transition-property: margin-top;
+}
+section, header, footer, #body {
+    float: left;
+    width: 100%;
+}
+
+#body #mainContent {
+    position: relative;
+    width: 100%;
+}
+#body #mainContent {
+    min-height: 100%;
+}
+.new_account .page-wrap {
+    width: 675px;
+}
+#body .page-wrap {
+    width: 760px;
+    float: left;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    position: relative;
+}
+#body .page-wrap .header {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 52px;
+    font-family: "league_gothicregular";
+    color: #2e2e2e;
+    position: relative;
+}
+#body.account_page .form-field, #body .form-field {
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+}
+#body.account_page .form-field .label, #body .form-field .label {
+    width: 270px;
+    font-family: "Source Sans Pro Black";
+    text-transform: uppercase;
+    color: #7d7c77;
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: 0.14em;
+}
+#body.account_page .page-wrap .field, #body .page-wrap .field {
+    margin-left: 280px;
+}
+.search-by {
+    margin: 20px 0px;
+}
+.new_account .search-by a.active:first-of-type {
+    background-color: #b2cf36;
+}
+.new_account .search-by a.active {
+    background-position: 12px 8px !important;
+    background-color: #00adee;
+}
+.search-by a.active {
+    background-position: 0 -70px;
+    background-color: #b3d135;
+    background-position: 12px -27px;
+}
+.searchby-sprite, .search-by a, .search-by a:hover, .search-by a.active, body.rate_professor .lozeng, body.rate_school .lozeng {
+    background: url('/assets/circle.svg') no-repeat;
+}
+A:visited {
+    text-decoration: none;
+}
+A:link {
+    text-decoration: none;
+}
+.search-by a {
+    padding-left: 37px;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    background-color: #414345;
+    text-decoration: none;
+    font-family: "Source Sans Pro Semibold";
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-position: 0 -280px;
+    background-position: 12px 8px;
+    -webkit-text-size-adjust: 100%;
+}
+html a, #body a {
+    color: #fff;
+    cursor: pointer;
+}
+.search-by a + a {
+    margin-left: 12px;
+}
+A:visited {
+    text-decoration: none;
+}
+A:link {
+    text-decoration: none;
+}
+.search-by a {
+    padding-left: 37px;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    background-color: #414345;
+    text-decoration: none;
+    font-family: "Source Sans Pro Semibold";
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-position: 0 -280px;
+    background-position: 12px 8px;
+    -webkit-text-size-adjust: 100%;
+}
+/* .searchby-sprite, .search-by a, .search-by a:hover, .search-by a.active, body.rate_professor .lozeng, body.rate_school .lozeng {
+    background: url(searchby-sbeda2fffcc-dccc941….png) no-repeat;
+} */
+html a, body a {
+    color: #00adee;
+    cursor: pointer;
+}
+#body.account_page .page-wrap .explain, #body .page-wrap .explain {
+    width: 100%;
+    margin-top: 20px;
+    background: #e7e7de;
+    padding: 10px;
+    font-family: "Source Sans Pro";
+    font-size: 15px;
+    color: #777777;
+    line-height: 17px;
+}
+#body.account_page .page-wrap .explain b, #body .page-wrap .explain b {
+    font-weight: bold;
+}
+#body .page-wrap b {
+    font-family: "Source Sans Pro ";
+}
+#form-context.show-student .tab-box .student {
+    display: block;
+}
+#body.account_page .page-wrap.new_account form, #body .page-wrap.new_account form {
+    clear: both;
+    margin-top: 0;
+}
+#body.account_page form[method="post"], #body form[method="post"] {
+    width: 100%;
+    margin-top: 30px;
+}
+#body.account_page .page-wrap.new_account form .form-field:first-of-type, #body .page-wrap.new_account form .form-field:first-of-type {
+    margin-bottom: 20px;
+}
+#body.account_page .form-field:first-of-type, #body .form-field:first-of-type {
+    margin-bottom: 20px;
+}
+#body.account_page .form-field, #body .form-field {
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+}
+#body.account_page .form-field .label, #body .form-field .label {
+    width: 270px;
+    font-family: "Source Sans Pro";
+    text-transform: uppercase;
+    color: #7d7c77;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    top: 25px;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: 0.14em;
+}
+label {
+    vertical-align: middle !important;
+}
+#body.account_page .form-field input[type="email"], #body.account_page .form-field input[type="password"], #body.account_page .form-field input[type="search"], #body.account_page .form-field input[type="text"], #body .form-field input[type="email"], #body .form-field input[type="password"], #body .form-field input[type="search"], #body .form-field input[type="text"] {
+    line-height: 1.1;
+    max-width: 364px !important;
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #d6d7d2;
+    width: 100%;
+}
+#body.account_page .form-field h3, #body.account_page .form-field input[type="email"], #body.account_page .form-field input[type="text"], #body .form-field h3, #body .form-field input[type="email"], #body .form-field input[type="text"] {
+    font-family: "Source Sans Pro ";
+    font-size: 24px;
+    color: #2e2e2e;
+}
+#body.account_page .page-wrap .field, #body .page-wrap .field {
+    margin-left: 280px;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="search"] {
+    border: none;
+}
+input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-corner-radius: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+input, select, textarea, option {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    -webkit-overflow-scrolling: touch;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type="email" i] {
+    padding: 1px 2px;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 2px;
+}
+
+#body.account_page .instruct, #body .instruct {
+    color: #a5a5a5;
+    font-family: "Source Sans Pro Light";
+    font-size: 12px;
+    font-style: italic;
+    left: 280px;
+    line-height: 1.4em;
+    max-width: 364px;
+    position: relative;
+    margin-top: -16px;
+}
+
+
+
+
+
+#body.account_page .checkbox_wrap:first-of-type, #body .checkbox_wrap:first-of-type {
+    margin-bottom: 15px;
+}
+#body.account_page .checkbox_wrap, #body .checkbox_wrap {
+    display: block;
+}
+
+#body.account_page .checker, #body .checker {
+    width: 13px;
+    height: 13px;
+}
+div.checker {
+    margin-right: 5px;
+}
+div.checker, div.checker span, div.checker input {
+    width: 19px;
+    height: 19px;
+}
+div.checker {
+    position: relative;
+}
+div.selector, div.selector *, div.radio, div.radio *, div.checker, div.checker *, div.uploader, div.uploader *, div.button, div.button * {
+    margin: 0;
+    padding: 0;
+}
+div.selector, div.checker, div.button, div.radio, div.uploader {
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+.checker {
+    cursor: pointer;
+}
+#body.account_page .checker span, #body .checker span {
+    border: 1px solid #d6d7d2;
+    width: 13px;
+    height: 13px;
+}
+div.checker span {
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: center;
+    background-position: 0 -260px;
+}
+div.checker, div.checker span, div.checker input {
+    width: 19px;
+    height: 19px;
+}
+div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
+    /* background-image: url(application-5260fcb….css); */
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+}
+div.selector, div.selector *, div.radio, div.radio *, div.checker, div.checker *, div.uploader, div.uploader *, div.button, div.button * {
+    margin: 0;
+    padding: 0;
+}
+.checker span {
+    cursor: pointer;
+}
+
+#body.account_page .checker.checker input, #body .checker.checker input {
+    width: 13px;
+    height: 13px;
+}
+div.checker input {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    border: none;
+    background: none;
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+div.checker, div.checker span, div.checker input {
+    width: 19px;
+    height: 19px;
+}
+div.checker input, input[type="search"], input[type="search"]:active {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.checker span input {
+    cursor: pointer;
+}
+div.selector, div.selector *, div.radio, div.radio *, div.checker, div.checker *, div.uploader, div.uploader *, div.button, div.button * {
+    margin: 0;
+    padding: 0;
+}
+input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    corner-radius: 0px;
+    -webkit-corner-radius: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+input, select, textarea, option {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    -webkit-overflow-scrolling: touch;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 2px;
+}
+div.checker span {
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: center;
+    background-position: 0 -260px;
+}
+div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
+    /* background-image: url(application-5260fcb….css); */
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+}
+.checker span {
+    cursor: pointer;
+}
+#body.account_page .checkbox_wrap .checkbox_label, #body .checkbox_wrap .checkbox_label {
+    margin-right: 0;
+}
+#body.account_page .checkbox_label, #body .checkbox_label {
+    font-size: 15px;
+    font-family: "Source Sans Pro";
+    text-transform: none;
+    cursor: hand;
+    cursor: pointer;
+    margin-right: 10px;
+}
+label {
+    vertical-align: middle !important;
+}
+p.recieve-newsletter-p.move-up {
+    margin-top: -27px;
+}
+#body .page-wrap p {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    -webkit-text-size-adjust: 100%;
+}
+p.recieve-newsletter-p {
+    display: block;
+    font-size: 15px !important;
+    line-height: 1.2;
+    margin-bottom: 0 !important;
+    padding-left: 18px;
+}
+p {
+    font-family: "Source Sans Pro Light";
+    font-size: 16px;
+    line-height: 23px;
+    color: #000;
+    width: 100%;
+    margin-bottom: 35px;
+}
+A:visited {
+    text-decoration: none;
+}
+A:link {
+    text-decoration: none;
+}
+p a {
+    color: #00adee;
+}
+html a, #body a {
+    color: #00adee;
+    cursor: pointer;
+}
+#body.account_page .checkbox_wrap .checkbox_label, #body .checkbox_wrap .checkbox_label {
+    margin-right: 0;
+}
+#body.account_page .checkbox_label, #body .checkbox_label {
+    font-size: 15px;
+    font-family: "Source Sans Pro";
+    text-transform: none;
+    cursor: hand;
+    cursor: pointer;
+    margin-right: 10px;
+}
+label {
+    vertical-align: middle !important;
+}
+
+#body.account_page .btn, #body.account_page .form-field input[type="submit"], #body .btn, #body .form-field input[type="submit"] {
+    max-width: 364px;
+    width: 100%;
+}
+input[type="submit"]:not(.save), .btn:not(.save), #userActionDD #signupLink:not(.save), #mUserActionDD #signupLink:not(.save) {
+    display: inline-block;
+    width: 100%;
+    background-color: #00adee;
+    text-transform: none;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "league_gothicregular";
+    font-size: 28px;
+    line-height: 36px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+    cursor: hand;
+}
+input[type="submit"], .btn {
+    opacity: 1;
+}
+input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    corner-radius: 0px;
+    -webkit-corner-radius: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+input, select, textarea, option {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    -webkit-overflow-scrolling: touch;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type="submit" i] {
+    appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(black, white);
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+
+#body.account_page .page-wrap.new_account form .option_or, #body .page-wrap.new_account form .option_or {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+#body .option_or {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Source Sans Pro ";
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #BEBFBA;
+}
+#body.account_page .option_or, #body .option_or {
+    border-style: initial;
+    width: 364px;
+    display: block;
+    /* font-size: 35px; */
+    /* color: #464645; */
+    position: relative;
+    text-align: center;
+    margin: 7px 0;
+}
+
+#body.account_page .btn_black, #body.account_page .btn_login, #body .btn_black, #body .btn_login {
+    background-color: #000;
+}
+#body.account_page .btn, #body.account_page .form-field input[type="submit"], #body .btn, #body .form-field input[type="submit"] {
+    max-width: 364px;
+    width: 100%;
+}
+input[type="submit"]:not(.save), .btn:not(.save), #userActionDD #signupLink:not(.save), #mUserActionDD #signupLink:not(.save) {
+    display: inline-block;
+    width: 100%;
+    background-color: #00adee;
+    text-transform: none;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "league_gothicregular";
+    font-size: 28px;
+    line-height: 36px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+    cursor: hand;
+}
+A:visited {
+    text-decoration: none;
+}
+A:link {
+    text-decoration: none;
+}
+input[type="submit"], .btn {
+    opacity: 1;
+}
+html a, body a {
+    color: #00adee;
+    cursor: pointer;
+}
+
+#body .inline-block-fix {
+    margin: 15px 0 0;
+    text-align: center;
+}
+
+#body.account_page .cancel-form, #body .cancel-form {
+    margin-top: 15px;
+    display: block;
+    font-family: "Source Sans Pro Semibold";
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ababab;
+    letter-spacing: 0.1em;
+    width: 100%;
+    margin-left: -100px;
+}
+#body .inline-block-fix a {
+    display: inline !important;
+    float: none !important;
+}
+A:visited {
+    text-decoration: none;
+}
+A:link {
+    text-decoration: none;
+}
+html a, body a {
+    color: #00adee;
+    cursor: pointer;
+}

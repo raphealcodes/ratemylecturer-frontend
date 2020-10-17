@@ -4,10 +4,18 @@ import { OnboardingComponent } from './components/onboarding/onboarding.componen
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '/onboarding', pathMatch: 'full'
+    path: '',
+    redirectTo: '/onboarding',
+    pathMatch: 'full'
   },
   {
-  path: 'onboarding', component: OnboardingComponent
+  path: 'onboarding',
+  component: OnboardingComponent
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./modules/auth/auth.module')
+                        .then(m => m.AuthModule)
   }
 ];
 

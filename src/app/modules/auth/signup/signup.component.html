@@ -1,1 +1,146 @@
-<p>signup works!</p>
+<div id="container">
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+    <div class="sticky-wrapper slide">
+        <div class="ad GAM">
+       <button class="close-ad-button">X</button>
+        </div>
+    </div>
+<!-- starts body content-->
+<div id="body" class="slide sticky-shown">
+    <div id="mainContent" class="height-col">
+        <div class="page-wrap new_account">
+            <div class="header">Create an Account</div>
+            <div class="form-field">
+                <div class="label">Account type</div>
+                <div class="field">
+                    <div class="search-by">
+                        <a class="active" id="startSignupStudent">Student</a>
+                        <a id="startSignupProfessor">Professor</a>
+                    </div>
+                    <div class="explain">
+                        <b>Why sign up?</b>
+                        Find professors faster with your saved preferences.<br>
+                        Access to your recent searches will make comparing<br>
+                        professors a breeze. And as usual, you'll always be<br>
+                        anonymous.
+                                  
+                    </div>
+
+                </div>
+            </div>
+            <div id="form-context" class="show-student">
+                <div class="tab-box student">
+                    <form id="studentForm">
+                        <div class="form-field">
+                            <label class="label" for="email">Email</label>
+                            <input type="email" id="email" class="field">
+                        </div>
+                        <div class="form-field">
+                            <label class="label" for="confirm_email">Confrim Email</label>
+                            <input type="email" id="confirm_email" class="field">
+                        </div>
+                        <div class="form-field">
+                            <label class="label" for="password">Password</label>
+                            <input type="password" id="password" class="field" maxlength="41">
+                        </div>
+                        <div class="form-field">
+                            <label class="label" for="confirm_password">Confrim Password</label>
+                            <input type="password" id="confirm_password" class="field">
+                        </div>
+                        <div class="form-field">
+                            <label class="label" for="first_name">First Name</label>
+                            <input type="text" id="first_name" class="field">
+                        </div>
+                        <div class="form-field">
+                            <label class="label" for="last_name">Last Name</label>
+                            <input type="text" id="last_name" class="field">
+                        </div>
+                        <div class="form-field form-field-container">
+                            <label for="school" class="label">School (Optional)</label>
+                            <span class="form_wrap" id="signup_school">
+                                <input class="field ui-autocomplete-input" type="text" id="school" autocomplete="off">
+                                <div id="schoolauContainerjoin" class="autocomplete-container schoolAutocompleteContainer">
+                                    <ul>
+
+                                    </ul>
+                                </div>
+                            </span>
+                            <div class="instruct">Prefills certain fields on your searches</div>
+
+                        </div>
+
+                        <div class="form-field field">
+                            <div class="checkbox_wrap terms-checkbox">
+                                <div class="checker" id="uniform-terms_conditions">
+                                    <span>
+                                        <input type="checkbox" id="terms_conditions">
+                                    </span>
+                                </div>
+                                <label for="terms_conditions" class="checkbox_label">
+                                    <p class="recieve-newsletter-p move-up" style="margin-bottom: 10px !important;">
+                                        I agree to the
+                                        <a>Terms of Use</a>
+                                        and
+                                        <a>Privacy Policy</a>
+                                        By checking the box, you also
+                                        understand that you are registering for 
+                                        RateMyLecturers.com.ng, which is governed by and
+                                        operated in accordance with Nigeria laws and consent to
+                                        the collection, use and disclosure of information
+                                        as described in this site's 
+                                        <a>Privacy Policy</a>
+                                        .
+
+                                    </p>
+                                </label>
+
+                            </div>
+                            <div class="checkbox_wrap">
+                                <label for="subscribe" class="checkbox_label">
+                                    <div class="checker" id="uniform-subscribe">
+                                        <span>
+                                            <input type="checkbox" id="subscribe">
+                                        </span>
+                                    </div>
+                                    <p class="recieve-newsletter-p move-up">
+                                        By checking the box, you agree to receive
+                                        newsletters from Rate My Lecturers. You may withdraw
+                                        your consent at any time by clicking on the
+                                        "Unsubscribe" link that is located within the
+                                        newsletter.
+                                    </p>
+                                </label>
+                                
+
+                            </div>
+
+                        </div>
+                        <div class="form-field field">
+                            <input type="submit" class="btn_signup" id="create">
+                            <div class="option_or">
+                                Or, already have an account?
+
+                            </div>
+                            <a class="btn btn_login">Log in</a>
+                            <div class="inline-block-fix">
+                                <a class="cancel-form">cancel</a>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ends body content-->
+
+    <app-footer></app-footer>
+</div>
